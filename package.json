@@ -1,15 +1,14 @@
 {
   "dependencies": {
+    "prop-types": "^15.8.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-scripts": "^4.0.0",
     "react-query": "4.0.0-beta.23",
-    "react-router-dom": "^6.3.0",
-    "prop-types": "^15.8.1"
+    "react-router-dom": "^6.3.0"
   },
   "main": "/index.js",
   "devDependencies": {
-    "react-scripts": "1.0.0"
+    "react-scripts": "^1.1.5"
   },
   "name": "jvco4b",
   "description": null,

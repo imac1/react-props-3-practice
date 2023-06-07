@@ -8,31 +8,33 @@ import * as React from "react";
 
 class Avatar extends React.Component {
   render() {
-    return <img src={""} alt={``} />;
+  
+    return <img src={this.props.img} alt={this.props.name} />;
   }
 }
 
 class Name extends React.Component {
   render() {
-    return <h1>NAME</h1>;
+    return <h1>{this.props.name}</h1>;
   }
 }
 
 class Handle extends React.Component {
   render() {
-    return <h3>HANDLE</h3>;
+    return <h3>@{this.props.handle}</h3>;
   }
 }
 
 class Badge extends React.Component {
   render() {
+    const {user, style, addFriend} = this.props
     return (
-      <div style={{}}>
-        <Avatar />
+      <div style={style}>
+        <Avatar name={user.name} img={user.img} />
         <div>
-          <Name />
-          <Handle />
-          <button onClick={() => ({})}>Add Friend</button>
+          <Name name={user.name}/>
+          <Handle handle={user.handle}/>
+          <button onClick={() => ({addFriend})}>Add Friend</button>
         </div>
       </div>
     );
